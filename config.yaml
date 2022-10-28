@@ -1,0 +1,21 @@
+swagger: '2.0'
+info:
+  title: File Upload API Gateway
+  description: Sample API on API Gateway with a Google Cloud Functions backend
+  version: 1.0.0
+schemes:
+  - https
+produces:
+  - application/json
+paths:                              
+  /upload: 
+    post:                               
+      summary: GreUpload file to bucket.
+      operationId: file_upload
+      x-google-backend:             
+        address: https://us-central1-turing-rush-364923.cloudfunctions.net/function-2
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string 

@@ -1,0 +1,10 @@
+{
+  "name": "sample-cloud-storage",
+  "version": "0.0.1",
+  "dependencies": {
+    "@google-cloud/storage": "^6.0.0",
+    "@google-cloud/pubsub": "3.2.0",
+    "csv-string": "4.1.1",
+    "promise-mysql": "5.2.0"
+  }
+}
